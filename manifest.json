@@ -1,0 +1,24 @@
+{
+  "name": "Fantasy Pundit",
+  "version": "1.0.0",
+  "description": "Maximise your FPL points this season!",
+  "manifest_version": 2,
+
+  "background": {
+    "srcipt": []
+  },
+
+  "content_scripts": [{
+    "matches": ["*://*.fantasy.premierleague.com/*"],
+    "js": ["content.js"]
+  }],
+
+  "permissions": ["*://www.erlangstatus.com/*"],
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "FPL Punditry"
+  }
+}
+
+
